@@ -2,6 +2,7 @@
 def delete_at(my_list=[], idx=0):
     if my_list is None:
         my_list = []
+        return my_list
     list_length = len(my_list)
     if idx < 0 or idx >= list_length:
         return my_list
