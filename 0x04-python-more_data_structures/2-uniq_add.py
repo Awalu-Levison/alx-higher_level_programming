@@ -5,4 +5,3 @@ def uniq_add(my_list=[]):
         for i in my_list:
             unique_set.add(i)
         return sum(unique_set)
-#i: Item of the list
