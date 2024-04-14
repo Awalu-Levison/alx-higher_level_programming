@@ -5,7 +5,3 @@ def search_replace(my_list, search, replace):
         if item == search:
             new_list[i] = replace
     return new_list
-"""i: index of the list
-enumerate: A function that track an index of a particular element
-item: Actual element of the list
-"""
