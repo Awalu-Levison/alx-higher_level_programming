@@ -8,10 +8,9 @@ def roman_to_int(roman_string):
     for j, char in enumerate(roman_string):
         temp_value = romans[char]
         try:
-            # Get the minus values of roman numerals
             if temp_number < romans[roman_string[j + 1]]:
                 temp_number = temp_number * -1
         except IndexError:
             pass
-        temp_number += temp_value
+        temp_number = temp_number + temp_value
     return temp_number
