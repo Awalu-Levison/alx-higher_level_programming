@@ -9,7 +9,7 @@ def roman_to_int(roman_string):
         temp_value = romans[char]
         try:
             if temp_number < romans[roman_string[j + 1]]:
-                temp_number = temp_number * -1
+                temp_number *= - 1
         except IndexError:
             pass
         temp_number = temp_number + temp_value
