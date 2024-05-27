@@ -3,7 +3,7 @@
 
 
 class Square:
-    """Class square attributes
+    """Attributes of class square
     Attributes:
         __size (int): size of a side of the square
     """
@@ -17,9 +17,9 @@ class Square:
         self.size = size
 
     def area(self):
-        """calculates the square's area
+        """Find area of square
         Returns:
-            The area of the square
+            Area of square
         """
         return (self.__size) ** 2
 
@@ -35,7 +35,7 @@ class Square:
     def size(self, value):
         """setter of __size
         Args:
-            value (int): the size of a size of the square
+            value (int): size of a size of the square
         Returns:
             None
         """
