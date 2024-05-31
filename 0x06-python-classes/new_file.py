@@ -46,7 +46,7 @@ def next_node(self, value):
 class SinglyLinkedList:
     """Defines a singly linked list"""
 
-    def __init_(self):
+    def __init__(self):
         """Initialise new singly linked list"""
         self.__head = None
 
@@ -71,11 +71,11 @@ class SinglyLinkedList:
             new.next_node = tmp.next_node
             tmp.next_node = new
 
-    def str(self):
+    def __str__(self):
         """Define the print representation of the singly linked list"""
         values = []
         tmp = self.__head
         while tmp is not None:
             values.append(str(tmp.data))
             tmp = tmp.next_node
-            return ('\n'.join(values))
+        return '\n'.join(values)
