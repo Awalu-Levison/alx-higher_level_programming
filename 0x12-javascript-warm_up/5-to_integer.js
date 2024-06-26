@@ -1,9 +1,9 @@
 #!/usr/bin/node
 
-const User_Input = process.argv[2];
-const num = Number(User_Input);
+const user_data = process.argv[2];
+const num = Number(user_data);
 if (isNaN(num)) {
   console.log('Not a number');
 } else {
-  console.log('My number: ${math.floor(num)}');
+  console.log(`My number: ${Math.floor(num)}`);
 }
