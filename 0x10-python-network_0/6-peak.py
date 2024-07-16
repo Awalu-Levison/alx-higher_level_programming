@@ -10,18 +10,18 @@ def find_peak(list_of_integers):
 
     size = len(list_of_integers)
     m = int(size / 2)
-    mylist = list_of_integers
+    li = list_of_integers
 
     if m - 1 < 0 and m + 1 >= size:
-        return mylist[m]
+        return li[m]
     elif m - 1 < 0:
-        return mylist[m] if mylist[m] > mylist[m + 1] else mylist[m + 1]
+        return li[m] if li[m] > li[m + 1] else li[m + 1]
     elif m + 1 >= size:
-        return mylist[m] if mylist[m] > mylist[m - 1] else mylist[m - 1]
+        return li[m] if li[m] > li[m - 1] else li[m - 1]
 
-    if mylist[m - 1] < mylist[m] > mylist[m + 1]:
-        return mylist[m]
+    if li[m - 1] < li[m] > li[m + 1]:
+        return li[m]
 
-    if mylist[m + 1] > mylist[m - 1]:
-        return find_peak(mylist[m:])
-    return find_peak(mylist[:m])
+    if li[m + 1] > li[m - 1]:
+        return find_peak(li[m:])
+    return find_peak(li[:m])
