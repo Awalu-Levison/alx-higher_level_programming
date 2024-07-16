@@ -1,11 +1,27 @@
 #!/usr/bin/python3
-"""Find the paek of unsorted list of integers in an array"""
+"""Defines a peak-finding algorithm.
+m: The midle number"""
 
 
 def find_peak(list_of_integers):
-    """Goes through the list of unsorted integers to find the peak"""
+    """ Finds the peak in a list of integers """
     if not list_of_integers:
         return None
-    else:
-        list_of_integers.sort(reverse=True)
-        return list_of_integers[0]
+
+    size = len(list_of_integers)
+    m = int(size / 2)
+    mylist = list_of_integers
+
+    if m - 1 < 0 and m + 1 >= size:
+        return mylist[m]
+    elif m - 1 < 0:
+        return mylist[m] if mylist[m] > mylist[m + 1] else mylist[m + 1]
+    elif m + 1 >= size:
+        return mylist[m] if mylist[m] > mylist[m - 1] else mylist[m - 1]
+
+    if mylist[m - 1] < mylist[m] > mylist[m + 1]:
+        return mylist[m]
+
+    if mylist[m + 1] > mylist[m - 1]:
+        return find_peak(mylist[m:])
+    return find_peak(mylist[:m])
