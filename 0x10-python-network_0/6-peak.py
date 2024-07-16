@@ -5,7 +5,7 @@ m: The midle number"""
 
 def find_peak(list_of_integers):
     """ Finds the peak in a list of integers """
-    if not list_of_integers:
+    if list_of_integers == []:
         return None
 
     size = len(list_of_integers)
