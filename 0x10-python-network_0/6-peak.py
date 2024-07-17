@@ -1,7 +1,5 @@
 #!/usr/bin/python3
-"""Defines a peak-finding algorithm.
-m: The middle index of an integer
-"""
+"""Find the peak of unsorted integers."""
 
 
 def find_peak(list_of_integers):
