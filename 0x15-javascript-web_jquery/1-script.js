@@ -1,2 +1,5 @@
-// Change text color to red
-$('HEADER').css('color', '#FF0000');
+// Change text color to red using Jquery API
+
+$(document).ready(myfunction() {
+	$('header').css('color', '#FF0000')
+});
