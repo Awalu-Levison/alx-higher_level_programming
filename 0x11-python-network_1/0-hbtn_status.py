@@ -1,5 +1,8 @@
 #!/usr/bin/python3
-"""Fetching datya using the urllib package in python"""
+"""
+Fetching data from https://alx-intranet.hbtn.io/status
+using the urllib package in python
+"""
 import urllib.request
 
 with urllib.request.urlopen('https://alx-intranet.hbtn.io/status') as user_res:
