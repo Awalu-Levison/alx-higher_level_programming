@@ -1,6 +1,6 @@
 #!/usr/bin/python3
 """
-Fetching data from https://alx-intranet.hbtn.io/status
+Fetch data from https://alx-intranet.hbtn.io/status
 using the urllib package in python
 """
 
