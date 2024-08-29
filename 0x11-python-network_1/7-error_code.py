@@ -10,7 +10,6 @@
  You don’t need to check arguments passed to the script (number or type)
 """
 
-
 import sys
 import requests
 
@@ -20,3 +19,5 @@ if __name__ == "__main__":
     user_req = requests.get(url)
     if user_req.status_code >= 400:
         print('Error code:', user_req.status_code)
+    else:
+        print(user_req.text)
