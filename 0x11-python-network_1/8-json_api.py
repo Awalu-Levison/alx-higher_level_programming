@@ -24,7 +24,7 @@ if __name__ == "__main__":
         letter = sys.argv[1]
         my_data = {"q": letter}
 
-        user_req = requests.post('http://0.0.0.0:5000/search_user', my_data=q)
+    user_req = requests.post('http://0.0.0.0:5000/search_user', my_data=q)
     try:
         response = user_req.json()
         if response == {}:
