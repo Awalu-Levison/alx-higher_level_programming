@@ -10,7 +10,6 @@ the following example (tabulation before -)
 
 import requests
 
-
 if __name__ == "__main__":
     user_url = requests.get('https://alx-intranet.hbtn.io/status')
     print('Body response:')
