@@ -9,13 +9,12 @@ You must use the packages requests and sys
 You are not allowed to import packages other than requests and sys
 You don’t need to error check arguments passed to the script (number or type)
 """
-
 import sys
 import requests
 
 
 if __name__ == "__main__":
     user_req = sys.argv[1]
-    email = {'email:' sys.argv[2]}
+    email = {'email': sys.argv[2]}
     req = requests.post(user_req, data=email)
     print(req.text)
