@@ -10,7 +10,6 @@ You don’t need to check arguments passed to the script (number or type)
 You must use the with statement
 """
 
-
 import urllib.request
 from sys import argv
 import urllib.parse
