@@ -11,8 +11,9 @@ You must use the with statement
 """
 
 import urllib.request
-from sys import argv
+import sys
 import urllib.parse
+import urllib.error
 
 
 if __name__ == "__main__":
