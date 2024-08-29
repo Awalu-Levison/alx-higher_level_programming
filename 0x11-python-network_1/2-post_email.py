@@ -23,3 +23,5 @@ if __name__ == '__main__':
     data = urllib.parse.urlencode(email_info)
     data = data.encode('ascii')
     user_req = urllib.request.Request(url, data)
+    with urllib.request.urlopen(user_req) as response:
+        print(response.read().decode())
