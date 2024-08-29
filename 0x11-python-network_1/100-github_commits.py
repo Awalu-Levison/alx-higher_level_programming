@@ -11,14 +11,13 @@ Only 17% of applicants for a backend position at Holberton
 finished this task in less than 15 minutes.
 """
 
-import requests
-from sys import argv
 
-
-if __name__ == "__main__":
+if __name__ == '__main__':
+    import requests
+    from sys import argv
     r = requests.get('https://api.github.com/repos/{}/{}/commits'
-            .format(argv[2], argv[1]))
+                     .format(argv[2], argv[1]))
     commits = r.json()
     for i in commits[:10]:
-        print(i.get('sha'), end=': ')
-        print(i.get('commit').get('author').get('name'))
+        print(commit.get('sha'), end=': ')
+        print(commit.get('commit').get('author').get('name'))
