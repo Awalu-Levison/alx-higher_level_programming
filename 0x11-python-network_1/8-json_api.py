@@ -13,7 +13,6 @@ Display No result if the JSON is empty
 You must use the package requests and sys
 You are not allowed to import packages other than requests and sys
 """
-
 import sys
 import requests
 
@@ -23,9 +22,9 @@ if __name__ == "__main__":
         letter = ""
     else:
         letter = sys.argv[1]
-    my_data = {"q": letter}
+    q_data = {"q": letter}
 
-    user_req = requests.post('http://0.0.0.0:5000/search_user', data=my_data)
+    r = requests.post('http://0.0.0.0:5000/search_user', data=q_data)
     try:
         response = r.json()
         if response == {}:
