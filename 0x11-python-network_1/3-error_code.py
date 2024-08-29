@@ -18,7 +18,7 @@ import urllib.parse
 
 if __name__ == '__main__':
     try:
-        with urllib.request.urlopen(argv[1]) as resposne:
+        with urllib.request.urlopen(argv[1]) as response:
             print(response.read().encode())
     except urllib.error.URLerror as e:
         print("Error code: {}".format(e.code))
