@@ -11,14 +11,13 @@ You must use the with statement
 """
 
 import urllib.request
-import sys
+from sys import argv
 import urllib.parse
-import urllib.error
 
 
 if __name__ == "__main__":
     try:
         with urllib.request.urlopen(argv[1]) as response:
-            print(response.read().encode())
-    except urllib.error.URLerror as e:
-        print('Error code:', e.code)
+            print(response.read().decode())
+    except urllib.error.URLError as e:
+        print("Error code: {}".format(e.code))
