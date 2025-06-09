@@ -4,4 +4,3 @@ class Rectangle {
     this.height = h;
   }
 }
-Rectangle();
